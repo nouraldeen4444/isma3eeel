@@ -1,0 +1,97 @@
+
+.courses{
+    margin-bottom: 0px;
+    background-color:#f0f4f9;
+    .container{
+        .courses__head{
+            padding-top: 50px;
+            align-items: center;
+            display: flex;
+            .courses__head__title{
+                font-family: none;
+                span{
+                    color: $second-color;
+                    font-size: 16px;
+                }
+                h1{
+                    margin: 0px;
+                    color: $main-color;
+                    font-size: 48px;
+                }
+            }
+        }
+        .courses__categories{
+            display: flex;
+            grid-gap: 20px;
+            margin-top: 30px;
+            margin-bottom: 36px;
+            .category{
+                width: 25%;
+                h3{
+                    font-size: 15px;
+                }
+                .dropDown{
+                    justify-content: space-between;
+                    padding:0px 10px;
+                    align-items: center;
+                    grid-gap: 10px;
+                    display: flex;
+                    background-color: white;
+                    border-radius: 4px;
+                    border: 1px solid #bdbdbd;
+                    p{
+                        margin: 10px;
+                        color: $main-color;
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .content-courses{
+            margin-bottom: 0px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;              
+            .card-format{
+                position: relative;
+                width: 30%;
+                margin-bottom: 30px;
+                border: 0.5px solid $border-cards;
+                border-radius: 10px;
+                .img__card{
+                    z-index: 1;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .cont-img{
+                    width: 80px;
+                    height: 80px;
+                    background-color: white;
+                    position: absolute;
+                    z-index: 5;
+                    top: 120px;
+                    left: 16px;
+                    img{
+                        margin-top: 8px;
+                        margin-left: 8px;
+                        width: auto;
+                    }
+                }
+                h4{
+                    margin-top: 36px;
+                    margin-bottom: 27px;
+                    margin-left: 18px;
+                }
+                p{
+                    color: $span-cards;
+                    font-size: 14px;
+                    margin-bottom: 22px;
+                    margin-left: 18px;
+                }
+            }
+        }
+    }
+}

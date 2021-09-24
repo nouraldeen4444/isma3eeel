@@ -1,0 +1,107 @@
+
+
+.feedback{
+    .container{
+        display: flex;
+        grid-gap: 30px;
+        .feed-img{
+            position: relative;
+            img{
+                z-index: 1;
+
+            }
+            .img-before{
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                transform: translate(-29px, -34px);
+                img{
+                    border-radius: 6px;
+                }
+            }
+            .img-after{
+                border-radius: 6px;
+                background-color: white;
+                text-align: center;
+                align-items: center;
+                // position: absolute;
+                // z-index: 5;
+                margin: auto;
+                transform: translate(0px, -59px);
+                width: 74%;
+                box-shadow: 0px -2px 5px #d6d0d0;
+                h4{
+                    padding-top: 14px;
+                    margin-bottom: 0;
+                    font-size: 20px;
+                    color: $main-color;
+                }
+                p{
+                    margin-top: 0;
+                    padding-bottom: 14px;
+                    color: #757575;
+                    font-size: 14px;
+                }
+            }
+        }
+        .feed-content{
+            h1{
+                margin: 0;
+                font-size: 48px;
+                font-family: auto;
+                color: $main-color;
+                margin-bottom: 16px;
+                span{
+                    color: $second-color;
+                }
+            }
+            p{
+                margin: 0;
+                line-height: 1.5;
+                font-size: 14px;
+                color: #212529;
+                margin-bottom: 45px;
+            }
+            h6{
+                margin-top: 0;
+                color: $main-color;
+                margin-bottom: 15px;
+            }
+            .feed-sm-fold{
+                align-items: center;
+                display: flex;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    transform: translate(9px,0px);
+                    border-radius: 6px;
+                }
+                .sm-fold-cont{
+                    border-radius: 6px;
+                    background-color: #f0f4f9;
+                    margin-top: 0;
+                    width: 100%;
+                    padding-left: 33px;
+                    h6{
+                        margin-top: 24px;
+                        margin-bottom: 9px;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: $main-color;
+                    }
+                    p{
+                        margin-top: 0px;
+                        margin-bottom: 24px;
+                        line-height: 1.71;
+                        font-size: 14px;
+                        color:  #757575;;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

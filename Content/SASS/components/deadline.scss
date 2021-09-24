@@ -1,0 +1,98 @@
+
+
+.bg{
+        .offer{
+            transform: translate(0, 75px);
+            margin-bottom: 200px;
+            .container{
+                background-color: $main-color;
+                border-radius: 5px;
+                display: flex;
+                color: white;
+                align-items: center;
+                .content{
+                    display: flex;
+                    align-items: center;
+                    .img-char{
+                        margin-left: 35px;
+                        margin-right: 15px;
+                    }
+                    h3{
+                        margin-left: 20px;
+                        font-family: auto;
+                        font-size: 31px;
+                        span{
+                            color: $second-color;
+                        }
+                    }
+                }
+                .deadline{
+                    justify-content: flex-end;
+                    width: 50%;
+                    display: flex;
+                    margin-right: 35px;
+                    .deadline-format{
+                        // display: grid;
+                        text-align: center;
+                        h4{
+                            font-size: 60px;
+                            margin: 0;
+                        }
+                        span{
+                            display: block;
+                            font-size: 10px;
+                            margin: 5px;
+                            text-transform: capitalize;
+                        }
+                    }
+                    span{
+                        margin: 26px;
+                        font-size: 30px;
+                    }
+                }
+                .expired{
+                    font-size: 28px;
+                }
+            }
+        }
+    
+}
+
+
+
+
+@media (max-width : 767px) {
+    .bg{
+        .offer{
+            .container{
+                .content{
+                    img{
+                        display: none;
+                    }
+                    h3{
+                        font-size: 12px;
+                    }
+                }
+                .deadline{
+                    margin-right: 10px;
+                    .deadline-format{
+                        h4{
+                            font-size: 20px;
+                        }
+                        span{
+                            
+                        }
+                    }
+                    span{
+                        margin: 4px;
+                        font-size: 15px;
+                    }
+                }
+                .expired{
+                    font-size: 15px;
+                }
+            }
+        }
+    
+}
+}

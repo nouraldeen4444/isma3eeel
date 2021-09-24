@@ -1,0 +1,124 @@
+
+
+.price{
+    background-color: #f0f4f9;
+    padding-bottom: 120px;
+    padding-top: 80px;
+    .container{
+        .price__head{
+            margin-bottom: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            .price__head__title{
+                font-family: none;
+                span{
+                    color: $second-color;
+                    font-size: 16px;
+                }
+                h1{
+                    margin: 0px;
+                    color: $main-color;
+                    font-size: 48px;
+                }
+            }
+            .price__head__date{
+                border: 5px solid white;
+                border-radius: 5px;
+                background-color: white;
+                display: flex;
+                max-height: 52px;
+                .bg-m{
+                    background-color: #00b2b2;
+                    a{
+                        color: white;
+                    } 
+                }
+                .bg-y{
+                    background-color: white;
+                    a{
+                        color: #00b2b2;
+                    }  
+                }
+            }
+        }
+            .price__cards{
+                display: flex;
+                grid-gap: 30px;
+                .card{
+                    border: 1px solid #bdbdbd;
+                    border-radius: 5px;
+                    width: 33.33333%;
+                    background-color: white;
+                    .container-card{
+                        width: 80%;
+                        margin: auto;
+                    .card__phase{
+                        text-align: center;
+                        padding: 10px 15px;
+                        a{
+                            background-color: $main-color;
+                            color: white;
+                            text-transform: capitalize;
+                            padding: 10px 15px;
+                        }
+                    }
+                    .card__price{
+                        display: flex;
+                        align-items: baseline;
+                        grid-gap: 5px;
+                        color: $main-color;
+                        font-family: none;
+                        span{
+                            font-size: 16px;
+                        }
+                        h1{
+                            font-size: 48px;
+                            margin-bottom: 0;
+                        }
+                    }
+                    p{
+                        color: #bdbdbd;
+                        margin: 0;
+
+                    }
+                    hr{
+                        margin-top: 35px;
+                        margin-bottom: 10px;
+                        color: #bdbdbd;
+                        
+                    }
+                    .cerd__topic{
+                        display: flex;
+                        grid-gap: 8px;
+                        align-items: center;
+                        p{
+                            color: $main-color;
+                            margin: 10px;
+                        }
+                        .co-grn{
+                            color: #00b2b2;
+                        }
+                        .co-wit{
+                            color: #bdbdbd;
+                        }
+                    }
+                    .genaric-btn{
+                        margin-bottom: 30px;
+                        text-align: center;
+                        a{
+                            color: $main-color;
+                        }
+                    }
+                    .bg-main{
+                        background-color: $main-color;
+                        a{
+                            color: white;
+                        }
+                    }
+                }
+                }
+            }
+           
+    }
+}

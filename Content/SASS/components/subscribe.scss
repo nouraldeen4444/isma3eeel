@@ -1,0 +1,50 @@
+
+
+.mail{
+    margin-bottom: 100px;
+    .container{
+        grid-gap: 60px;
+        margin: 0 255px;
+        display: flex;
+        align-items: center;
+        .mail-img{
+            img{
+
+            }
+        }
+        .mail-content{
+            h6{
+                color: $second-color;
+                font-size: 16px;
+                line-height: 1.4;
+                margin-bottom: 12px;
+                margin-top: 0;
+            }
+            h1{
+                margin-top: 0;
+                font-size: 48px;
+                color: $main-color;
+                font-family: none;
+            }
+            form{
+                border: 1px solid #bdbdbd;
+                border-radius: 4px;
+                .envelope{
+                    margin-left: 16px;
+                }
+                input{
+                    border : none;
+                    padding-right: 22%;
+                }
+                button{
+                    background-color: $second-color;
+                    padding: 10px 20px;
+                    color: $main-color;
+                    border: none;
+                    border-radius: 4px;
+                    margin: 6px;
+                }
+            }
+        }
+    }
+}

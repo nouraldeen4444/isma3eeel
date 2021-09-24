@@ -1,0 +1,184 @@
+
+
+.bg{
+    .header{
+        nav{
+            margin-bottom: 0;
+            .container{
+                display: flex;
+                align-items: center;
+                min-height: 56px;
+                .nav-header{
+                    display: flex;
+                    align-items: center;
+                    width: 30%;
+                    h1{
+                        font-size: 20px;
+                        color: $main-color;
+                        margin-left: 5px;
+                        
+                    }
+                }
+                .content{
+                    width: 70%;
+                    justify-content: flex-end;
+                    display: flex;
+                    .links{
+                        display: flex;
+                        list-style-type: none;
+                        margin-right: 10px;
+                        align-items: center;
+                        li {
+                            margin-right: 40px;
+                            a{
+                                text-decoration: none;
+                                color: $main-color;
+                            }
+                        }
+                    }
+                    .navbar__enter{
+                        display: flex;
+                        align-items: center;
+                        
+                        .search{
+                            background-color: white;
+                            padding: 9px 10px;
+                            margin-left: 10px;
+                            border-radius: 2px;
+                        }
+                        
+                    }
+                }
+                .nav-toggle{
+                    display: none;
+                }
+            }
+        }
+    } 
+}
+
+
+
+
+@media (max-width : 767px) {
+    .bg{
+        .header{
+            nav{
+                .container{
+                    .nav-header{
+                        width: 50%;
+                        img{
+                            width: 20px;
+                        }
+                        h1{
+                            font-size: 12px;
+                        }
+                    }
+                    .content{
+                        width: 50%;
+                        .links{
+                            background-color: white;
+                            align-items: center;
+                            display: block;
+                            flex-direction: column;
+                            position: absolute;
+                            box-shadow: 2px 2px 7px gold;
+                            top: 14%;
+                            right: 18px;
+                            height: 0;
+                            overflow: hidden;
+                            transition: 0.5s;
+                            li{
+                                padding: 10px;
+                            }
+                        }
+                        .show-links {
+                            height: 10rem;
+                          }
+                        .navbar__enter{
+                            .genaric-btn{
+                                padding: 3px 6px;
+                                a{
+                                    font-size: 12px;
+                                }
+                            }
+                            .search{
+                                padding: 4px 6px;
+                            }
+                        }
+    
+                        
+                        
+                    }
+                    .nav-toggle{
+                        display: block;
+                        color:$main-color;
+                        background: transparent;
+                        border-color: transparent;
+                        transition: 0.5s;
+                        font-size: 30px;
+                        font-size: 14px;
+                    }
+                    .togg{
+                        color: $second-color;
+                        transform: rotate(180deg);
+                    }
+                }
+            } 
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width : 991px) {
+    
+    .bg{
+        .header{
+            nav{
+                .container{
+                    .nav-header{
+                        width: 50%;
+                    }
+                    .content{
+                        width: 50%;
+                        .links{
+                            background-color: white;
+                            align-items: center;
+                            display: block;
+                            flex-direction: column;
+                            position: absolute;
+                            box-shadow: 2px 2px 7px gold;
+                            top: 17%;
+                            right: 88px;
+                            height: 0;
+                            overflow: hidden;
+                            transition: 0.5s;
+                            li{
+                                padding: 10px;
+                            }
+                        }
+                        .show-links {
+                            height: 10rem;
+                        }
+                    }
+                    .nav-toggle{
+                        display: block;
+                        color:$main-color;
+                        background: transparent;
+                        border-color: transparent;
+                        transition: 0.5s;
+                        font-size: 30px;
+                    }
+                    .togg{
+                        color: $second-color;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+
+
+.courses{
+    margin-bottom: 130px;
+    .container{
+        color: $main-color;
+        .title-courses{
+            h4{
+                font-family: auto;
+                font-size: 48px;
+                text-align: center;
+                margin-bottom: 36px;
+            }
+        }
+        .content-courses{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 100px;                
+            .card-format{
+                position: relative;
+                width: 30%;
+                margin-bottom: 30px;
+                border: 0.5px solid $border-cards;
+                border-radius: 10px;
+                .img__card{
+                    z-index: 1;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .cont-img{
+                    width: 80px;
+                    height: 80px;
+                    background-color: white;
+                    position: absolute;
+                    z-index: 5;
+                    top: 120px;
+                    left: 16px;
+                    img{
+                        margin-top: 8px;
+                        margin-left: 8px;
+                        width: auto;
+                    }
+                }
+                h4{
+                    margin-top: 36px;
+                    margin-bottom: 27px;
+                    margin-left: 18px;
+                }
+                p{
+                    color: $span-cards;
+                    font-size: 14px;
+                    margin-bottom: 22px;
+                    margin-left: 18px;
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media (max-width : 767px) {
+    .courses{
+        margin-bottom: 130px;
+        .container{
+            color: $main-color;
+            .title-courses{
+                h4{
+                    font-family: auto;
+                    font-size: 48px;
+                    text-align: center;
+                    margin-bottom: 36px;
+                }
+            }
+            .content-courses{
+                display: block;
+                flex-wrap: nowrap;                    
+                .card-format{
+                    width: 100%;
+                }
+                }
+            }
+            
+        }
+}
